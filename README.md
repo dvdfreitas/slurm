@@ -7,13 +7,16 @@
 | Quality of Service (Qos) | conjunto de regras aplicado aos jobs. |
 
 ### What you need to know
-USERNAME
 
+| USERNAME | 
 
 ### What you can do
+
 O sacctmgr é o comando do Slurm para consultar e gerir informação sobre utilizadores, contas e regras de utilização dos recursos.
 
+```bash
 sacctmgr show qos
+```
 
 
 sacctmgr show qos gpu_batch format=name,maxtresperuser,maxtres,maxjobspu,maxsubmitjobspu,grptres
@@ -32,9 +35,6 @@ squeue -u USERNAME
 JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
 
 
-maxjobspu
-Maximum Jobs Per User
-Maximum job que um utilizador pode por QoS
 
 
 
