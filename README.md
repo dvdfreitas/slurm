@@ -1,4 +1,4 @@
-# slurm
+# Slurm
 
 ## Introduction
 
@@ -20,7 +20,7 @@ sacctmgr show qos
 
 O problema é que isto mostra demasiada informação. 
 
-|-|-|-|
+
 | maxjobspu | Maximum Jobs Per User | Maximum job que um utilizador pode por QoS |
 |-|-|-|
 
