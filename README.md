@@ -18,6 +18,12 @@ O sacctmgr é o comando do Slurm para consultar e gerir informação sobre utili
 sacctmgr show qos
 ```
 
+O problema é que isto mostra demasiada informação. 
+
+|-|-|-|
+| maxjobspu | Maximum Jobs Per User | Maximum job que um utilizador pode por QoS |
+|-|-|-|
+
 
 sacctmgr show qos gpu_batch format=name,maxtresperuser,maxtres,maxjobspu,maxsubmitjobspu,grptres
       Name     MaxTRESPU       MaxTRES MaxJobsPU MaxSubmitPU       GrpTRES 
