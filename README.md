@@ -10,7 +10,7 @@
 
 | USERNAME | 
 
-### What you can do
+### Sobre o ambiente
 
 O sacctmgr é o comando do Slurm para consultar e gerir informação sobre utilizadores, contas e regras de utilização dos recursos.
 
@@ -21,10 +21,23 @@ sacctmgr show qos
 O problema é que isto mostra demasiada informação. 
 
 ```bash
+sacctmgr show qos format=name
+```
+```text
+      Name 
+---------- 
+    normal 
+       gpu 
+ gpu_batch 
+       cpu
+```
+
+
+```bash
 sacctmgr show qos format=name,MaxSubmitPU
 ```
 
-```
+```text
       Name MaxSubmitPU 
 ---------- ----------- 
     normal             
