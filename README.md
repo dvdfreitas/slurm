@@ -20,12 +20,29 @@ sacctmgr show qos
 
 O problema é que isto mostra demasiada informação. 
 
+```bash
+sacctmgr show qos format=name,MaxSubmitPU
+```
 
-| Parâmetro | Nome | Descrição|
+```
+      Name MaxSubmitPU 
+---------- ----------- 
+    normal             
+       gpu           1 
+ gpu_batch          10 
+       cpu           3
+```
+
+
+| Parâmetro | Designação | Descrição|
 |-|-|-|
 | maxjobspu | Maximum Jobs Per User | Maximum job que um utilizador pode por QoS |
 |-|-|-|
 
+
+```bash
+sacctmgr show qos format=name,MaxSubmitPU
+```
 
 sacctmgr show qos gpu_batch format=name,maxtresperuser,maxtres,maxjobspu,maxsubmitjobspu,grptres
       Name     MaxTRESPU       MaxTRES MaxJobsPU MaxSubmitPU       GrpTRES 
