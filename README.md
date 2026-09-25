@@ -5,7 +5,6 @@
 ### Terms
 
 
-|-|-|
 | Quality of Service (Qos) | conjunto de regras aplicado aos jobs. |
 
 ### What you need to know
